@@ -12,6 +12,7 @@ class Screen:
 
     def clear_screen(self):
         os.system('cls')
+        os.system('clear')
         
     
     def upper_box(self,players,dealer):
