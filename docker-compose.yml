@@ -1,0 +1,6 @@
+version: "3"
+services:
+  pythonplay:
+    build: ./black_jack
+    image: ferdzcanapi/black_jack
+    container_name: black_jack

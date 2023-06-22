@@ -145,57 +145,6 @@ class Game():
             except ValueError:
                 print('\n1 or 2 only')
                 is_yes_or_no = False
-            
-    # def start_Game(self):
-    #     ''''''
-    #     new_game = True
-    #     while new_game:
-    #         print("New Game!")
-    #         self.dealer.shuffle()
-    #         has_remaining_cards = True
-    #         has_remaining_pot = True
-    #         i = 1
-    #         while has_remaining_cards and has_remaining_pot:
-    #             print(f'Match {i}')
-    #             print(self.dealer)
-    #             self.show_all_hands()
-    #             input("")
-    #             self.place_bets()
-    #             input("")
-    #             self.first_deal()
-    #             input("")
-    #             self.show_bets()
-    #             input("")
-    #             for x in range(2): #second and third deal
-    #                 self.second_third_deal()
-    #                 input("")
-    #             for player in self.players: # Compare total scores to see who wins
-    #                 x = self.__compare_scores(player)
-    #                 if x == 1:
-    #                     player.wins(self.player_bets[player])
-    #                     print(f'{player.name} wins!')
-    #                 elif x == -1:
-    #                     player.lost(self.player_bets[player])
-    #                     print(f'{player.name} lost')
-    #                 elif x == 0:
-    #                     print(f'Dealer is tied with {player.name}')
-    #                 else:
-    #                     print(x)
-    #                 print(f"{player.name}'s pot: {player.pot}\n")
-    #                 print(f'Dealer: {self.dealer.total_value}')
-    #                 print(f'{player.name}: {player.total_value}\n')    
-    #                 self.player_bets[player]=0
-    #                 input("")
-    #             self.dealer.cards_To_Graveyard(self.players)
-    #             input("")
-    #             i += 1
-    #             has_remaining_cards = self.__has_remaining_cards()
-    #             has_remaining_pot = self.__has_remaining_pot()
-            
-    #         print(self.dealer)
-    #         self.show_all_player_details()
-    #         self.dealer.collect_From_Graveyard()
-    #         new_game = self.__new_game()
 
     def start_Game(self):
         new_game = True
