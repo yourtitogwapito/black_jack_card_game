@@ -5,6 +5,4 @@ RUN python -m pip install -r requirements.txt
 WORKDIR /app
 COPY . /app
 
-EXPOSE 8888
-
-CMD ["python", "requirements.py"]
+CMD ["python", ".\black_jack\main.py"]
